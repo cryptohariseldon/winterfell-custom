@@ -243,6 +243,8 @@ where
     // The verifier uses these commitments to update the public coin and draw random points alpha
     // from them; in the interactive version of the protocol, the verifier sends these alphas to
     // the prover, and the prover uses them to compute and commit to the subsequent FRI layers.
+
+    // READ : REPLACE WITH BYTEMUCK
     let fri_verifier = FriVerifier::new(
         &mut channel,
         &mut public_coin,
